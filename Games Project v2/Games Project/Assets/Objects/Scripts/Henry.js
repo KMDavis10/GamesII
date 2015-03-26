@@ -132,7 +132,7 @@ function OnGUI() {
 	// a boolean array to determine what evidence to display a response to. 
 	if (present) {
 		displayText = false;
-		for (var i = 0; i < Inventory.inventoryItems.length; i++) {
+		for (var i = 0; i < Inventory.count; i++) {
 			if (!Inventory.inventoryItems[i].Equals("empty")) {
 				if (GUI.Button(new Rect(20, i*20, 200, 20), Inventory.inventoryItems[i])) {
 					presentEvidence[i] = true;
@@ -149,7 +149,7 @@ function OnGUI() {
 			GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), npcWords[randomNum]);
 		}
 	}
-	for (var j = 0; j < Inventory.inventoryItems.length; j++) {
+	for (var j = 0; j < Inventory.count; j++) {
 		if (presentEvidence[j] == true) {
 			presentEvidence[j] = evidence;
 			if (evidence && Inventory.inventoryItems[j] == "cash") {

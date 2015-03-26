@@ -3,7 +3,7 @@
 var Contents : Transform[]; //The content of the Inventory
 //An array that the NPC classes can access - made up of Strings
 static var inventoryItems: String[];
-static var count: int = 0;
+static var count = 0;
 static var remainingActions = 0;
 var MaxContent : int = 12; //The maximum number of items the Player can carry.
 var DebugMode = true; //If this is turned on the Inventory script will output the base of what it's doing to the Console window.
@@ -33,12 +33,14 @@ function AddItem(Item:Transform)
 	var newContents = new Array(Contents);
 	newContents.Add(Item);
 	Contents=newContents.ToBuiltin(Transform); //Array to unity builtin array
+	//Item name that is picked up is added to the String array at position count (initialized to 0).
 	inventoryItems[count] = Item.name;
 	if (DebugMode)
 	{
 		Debug.Log(inventoryItems[count]+" has been added to inventory");
 	}
 	count++;
+	Debug.Log("The inventory count is: " + count);
 	//Tell the InventoryDisplay to update the list.
 	if (playersInvDisplay != null)
 	{
