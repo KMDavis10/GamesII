@@ -2,6 +2,7 @@
 //This script allows you to insert code when the Item is used (clicked on in the inventory).
 
 var deleteOnUse = true;
+var sayItemWords = true;
 
 private var playersInv : Inventory;
 private var item : Item;
@@ -24,16 +25,22 @@ function Awake ()
 //This is called when the object should be used.
 function UseEffect () 
 {
-	Debug.LogWarning("geh"); //INSERT CUSTOM CODE HERE!
+	//Debug.LogWarning("geh"); //INSERT CUSTOM CODE HERE!
 	
 	//Play a sound
 	playersInv.gameObject.SendMessage("PlayDropItemSound", SendMessageOptions.DontRequireReceiver);
 	
 	//This will delete the item on use or remove 1 from the stack (if stackable).
-	if (deleteOnUse == true)
+	if (sayItemWords == true)
 	{
-		DeleteUsedItem();
+		ItemWords(); 
+		//DeleteUsedItem();
 	}
+}
+
+function ItemWords() 
+{
+	Debug.LogWarning(item.tag);
 }
 
 //This takes care of deletion
