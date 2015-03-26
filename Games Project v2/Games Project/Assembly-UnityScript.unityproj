@@ -59,6 +59,7 @@
      <Compile Include="Assets\Inventory\Scripts\Other\WeaponSwitch.js" />
      <Compile Include="Assets\Objects\Scripts\Carrots.js" />
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
+     <Compile Include="Assets\Objects\Scripts\Knife.js" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.js" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="UnityEngine.UI">
