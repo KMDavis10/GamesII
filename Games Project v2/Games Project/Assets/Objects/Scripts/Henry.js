@@ -20,6 +20,8 @@ var clickCount: int = 0;
 var talkCounter: int = 0;
 var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
+var henryCam: Camera;
+var playerCam: Camera;  
 
 // Use this for initialization
 function Start () {
@@ -69,6 +71,9 @@ function Update () {
 				}
 				npcWords[randomNum] = "empty";
 				dislikedWordCount++;
+				henryCam.enabled = false;
+				playerCam.enabled = true;
+				
 				dialog = false;
 			}
 			displayText = false;
@@ -91,6 +96,8 @@ function Update () {
 }
 
 function OnMouseDown() {
+	Camera.main.enabled = false;
+	henryCam.enabled = true;
 	displayText = true;
 	clickCount++;
 	do {
