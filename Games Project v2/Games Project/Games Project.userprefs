@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Items\Item.js">
+    <Files>
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="20" Column="35" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="184" Column="2" />
+      <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Carrots.js" Line="6" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
