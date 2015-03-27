@@ -93,6 +93,14 @@ function Update () {
 			
 		}
 	}
+	if(Input.GetKey(KeyCode.Escape)) {
+		henryCam.enabled = false;
+		playerCam.enabled = true;
+		present = false;
+		dialog = false;
+		displayText = false;
+		evidence = false;
+	}
 }
 
 function OnMouseDown() {
