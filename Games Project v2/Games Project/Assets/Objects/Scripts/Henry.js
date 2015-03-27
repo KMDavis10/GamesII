@@ -71,6 +71,7 @@ function Update () {
 				}
 				npcWords[randomNum] = "empty";
 				dislikedWordCount++;
+				//player.canMove = true;
 				henryCam.enabled = false;
 				playerCam.enabled = true;
 				
@@ -107,6 +108,7 @@ function OnMouseDown() {
 	Camera.main.enabled = false;
 	henryCam.enabled = true;
 	displayText = true;
+	//player.canMove = false;
 	clickCount++;
 	do {
 		if (NPCLike) { 
