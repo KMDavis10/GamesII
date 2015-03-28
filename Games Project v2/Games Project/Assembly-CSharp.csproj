@@ -54,9 +54,6 @@
      <Compile Include="Assets\Objects\Scripts\Earring.cs" />
      <Compile Include="Assets\Objects\Scripts\Fridge.cs" />
      <Compile Include="Assets\Objects\Scripts\GuineaPigPellets.cs" />
-     <Compile Include="Assets\Objects\Scripts\Henry.cs" />
-     <Compile Include="Assets\Objects\Scripts\Knife.cs" />
-     <Compile Include="Assets\Objects\Scripts\LegOfLamb.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript1.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerNoStuff.cs" />
