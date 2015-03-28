@@ -60,11 +60,12 @@
      <Compile Include="Assets\Objects\Scripts\Carrots.js" />
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
      <Compile Include="Assets\Objects\Scripts\Knife.js" />
+     <Compile Include="Assets\Objects\Scripts\LegOfLamb.js" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.js" />
      <Compile Include="Assets\Objects\Scripts\StoreCamera.js" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/kmari_000/Desktop/GamesII/Games Project v2/Games Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Leanna/Desktop/GamesII/Games Project v2/Games Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>

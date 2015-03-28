@@ -1,17 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Henry.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Inventory.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="92" Column="5" />
-      <File FileName="Assets\Inventory\Scripts\Items\ItemEffect.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="79" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="184" Column="2" />
+      <File FileName="Assets\Objects\Scripts\Knife.js" Line="61" Column="3" />
       <File FileName="Assets\Objects\Scripts\Carrots.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Leanna\Desktop\GamesII\Games Project v2\Games Project\Assets\Inventory\Scripts\Inventory.js" line="31" />
+      <Breakpoint file="C:\Users\Leanna\Desktop\GamesII\Games Project v2\Games Project\Assets\Inventory\Scripts\Inventory.js" line="52" />
+      <Breakpoint file="C:\Users\Leanna\Desktop\GamesII\Games Project v2\Games Project\Assets\Inventory\Scripts\Inventory.js" line="84" />
+      <Breakpoint file="C:\Users\Leanna\Desktop\GamesII\Games Project v2\Games Project\Assets\Inventory\Scripts\Inventory.js" line="108" />
+      <Breakpoint file="C:\Users\Leanna\Desktop\GamesII\Games Project v2\Games Project\Assets\Inventory\Scripts\Inventory.js" line="120" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

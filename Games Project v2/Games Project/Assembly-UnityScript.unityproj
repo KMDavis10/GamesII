@@ -60,6 +60,7 @@
      <Compile Include="Assets\Objects\Scripts\Carrots.js" />
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
      <Compile Include="Assets\Objects\Scripts\Knife.js" />
+     <Compile Include="Assets\Objects\Scripts\LegOfLamb.js" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.js" />
      <Compile Include="Assets\Objects\Scripts\StoreCamera.js" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
