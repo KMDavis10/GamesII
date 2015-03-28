@@ -24,7 +24,7 @@ public class LegOfLamb extends MonoBehaviour {
 			if(currentTime - executedTime > timeToWait)
 			{
 				if (yesButtonClick == true && noButtonClick == false) {
-					Destroy(gameObject);
+					//Destroy(gameObject);
 				}
 				executedTime = 0.0f;
 				//yesButtonClick = false;
