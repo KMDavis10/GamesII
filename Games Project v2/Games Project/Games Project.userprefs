@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Henry.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\DanglyEarrings.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="92" Column="5" />
-      <File FileName="Assets\Inventory\Scripts\Items\ItemEffect.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Carrots.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\CandyWrapper.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\DanglyEarrings.js" Line="68" Column="84" />
+      <File FileName="Assets\Objects\Scripts\DogPicture.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Earbuds.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\GuineaPigPellets.js" Line="23" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -46,14 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Objects\Scripts\CandyWrapper.cs" />
-     <Compile Include="Assets\Objects\Scripts\Carrots.cs" />
-     <Compile Include="Assets\Objects\Scripts\DanglyEarrings.cs" />
-     <Compile Include="Assets\Objects\Scripts\DogPicture.cs" />
-     <Compile Include="Assets\Objects\Scripts\Earbuds.cs" />
-     <Compile Include="Assets\Objects\Scripts\Earring.cs" />
      <Compile Include="Assets\Objects\Scripts\Fridge.cs" />
-     <Compile Include="Assets\Objects\Scripts\GuineaPigPellets.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript1.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerNoStuff.cs" />

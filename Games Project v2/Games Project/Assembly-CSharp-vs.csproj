@@ -46,21 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Objects\Scripts\CandyWrapper.cs" />
-     <Compile Include="Assets\Objects\Scripts\Carrots.cs" />
-     <Compile Include="Assets\Objects\Scripts\DanglyEarrings.cs" />
-     <Compile Include="Assets\Objects\Scripts\DogPicture.cs" />
-     <Compile Include="Assets\Objects\Scripts\Earbuds.cs" />
-     <Compile Include="Assets\Objects\Scripts\Earring.cs" />
      <Compile Include="Assets\Objects\Scripts\Fridge.cs" />
-     <Compile Include="Assets\Objects\Scripts\GuineaPigPellets.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript1.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerNoStuff.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerStuff.cs" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/kmari_000/Desktop/GamesII/Games Project v2/Games Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Leanna/Desktop/GamesII/Games Project v2/Games Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
