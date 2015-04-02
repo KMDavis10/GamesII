@@ -53,7 +53,12 @@ function OnMouseDown()
 	//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
 	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick)
 	{
-		PickUpItem();
+		if (Controls.remainingActions >= 2) {
+			PickUpItem();
+		}
+		else {
+			Debug.Log("Not enough action points to pick this up");
+		}
 	}
 }
 

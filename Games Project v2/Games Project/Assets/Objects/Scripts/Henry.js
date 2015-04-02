@@ -139,7 +139,7 @@ function OnGUI() {
 			executedTime1 = Time.time;
 			if (talkCounter < 3)
 			{
-				Inventory.remainingActions = Inventory.remainingActions - 1;
+				Controls.remainingActions = Controls.remainingActions - 1;
 				talkCounter= talkCounter+1;
 			}
 		}

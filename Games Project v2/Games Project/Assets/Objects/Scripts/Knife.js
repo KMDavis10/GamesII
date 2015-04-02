@@ -25,20 +25,25 @@ public class Knife extends MonoBehaviour {
 			if(currentTime - executedTime > timeToWait)
 			{
 				if (yesButtonClick == true && noButtonClick == false) {
-					/*if(Inventory.remainingActions >= 2){
-						if (Inventory.inventoryArray.Contains("knife") == false) {
-							Inventory.remainingActions = Inventory.remainingActions - 2;
-							Inventory.inventoryArray.Insert(Inventory.listCount, "knife");
-							Inventory.listCount++;
-							knifeTake = true;
+					/*Debug.Log("ehhhhh");
+					if(Controls.remainingActions >= 2){
+						for (var i = 0; i < Inventory.inventoryItems.length; i++) {
+							Debug.Log("ohhhhh");
+							if (Inventory.inventoryItems[i] == "Knife") {
+								Debug.Log("eyyyy");
+								Controls.remainingActions = Controls.remainingActions - 2;
+								//Inventory.inventoryArray.Insert(Inventory.listCount, "knife");
+								//Inventory.listCount++;
+								knifeTake = true;
+							}
 						}
-					} */
-				}
-				executedTime = 0.0f;
-				//yesButtonClick = false;
-				noButtonClick = false;
-
+					}*/
+				}  
 			}
+			executedTime = 0.0f;
+			//yesButtonClick = false;
+			noButtonClick = false;
+
 		}
 		if (knifeTake) {
 			Destroy(gameObject);
