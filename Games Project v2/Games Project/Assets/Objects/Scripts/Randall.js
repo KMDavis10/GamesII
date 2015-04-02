@@ -4,7 +4,7 @@ private var npcWords: String[];
 var presentEvidence : boolean[];
 var evidence = false; 
 var cashWad = false; 
-var buds = false; 
+var dogPicture = false; 
 var displayText = false; 
 var present = false;
 var dialog = false;
@@ -20,7 +20,7 @@ var clickCount: int = 0;
 var talkCounter: int = 0;
 var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
-var henryCam: Camera;
+var randallCam: Camera;
 var playerCam: Camera;  
 
 // Use this for initialization
@@ -72,7 +72,7 @@ function Update () {
 				npcWords[randomNum] = "empty";
 				dislikedWordCount++;
 				//player.canMove = true;
-				henryCam.enabled = false;
+				randallCam.enabled = false;
 				playerCam.enabled = true;
 				
 				dialog = false;
@@ -84,18 +84,18 @@ function Update () {
 				Inventory.inventoryItems[temp] = "empty";
 				cashWad = false; 
 			}
-			if (buds) {
-				/**int temp = Inventory.inventoryItems.IndexOf("earbuds");
-				Inventory.inventoryItems.Remove("earbuds");
+			if (dogPicture) {
+				/**int temp = Inventory.inventoryItems.IndexOf("dogPicture");
+				Inventory.inventoryItems.Remove("dogPicture");
 				Inventory.inventoryItems.Insert(temp, "empty");
 				Inventory.emptyCount++;
-				buds = false; */
+				dogPicture = false; */
 			}
 			
 		}
 	}
 	if(Input.GetKey(KeyCode.Escape)) {
-		henryCam.enabled = false;
+		randallCam.enabled = false;
 		playerCam.enabled = true;
 		present = false;
 		dialog = false;
@@ -105,9 +105,9 @@ function Update () {
 }
 
 function OnMouseDown() {
-	Camera.main.enabled = false;
-	henryCam.enabled = true;
-	//Debug.Log(henryCam.gameObject.name);
+	playerCam.enabled = false;
+	randallCam.enabled = true;
+	//Debug.Log(randallCam.gameObject.name);
 	displayText = true;
 	//player.canMove = false;
 	clickCount++;
@@ -135,7 +135,7 @@ function OnGUI() {
 		}
 	}
 	if (displayText) {
-		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to Henry")) {
+		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to Randall")) {
 			dialog = true;
 			executedTime1 = Time.time;
 			if (talkCounter < 3)
@@ -173,11 +173,11 @@ function OnGUI() {
 			if (evidence && Inventory.inventoryItems[j] == "cash") {
 				executedTime1 = Time.time;
 				cashWad = true;
-				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Henry snatches the cash wad. Ha-ha!");
+				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Randall snatches the cash wad. Ha-ha!");
 			}
-			else if (evidence && Inventory.inventoryItems[j] == "earbuds") { 
+			else if (evidence && Inventory.inventoryItems[j] == "DogPicture") { 
 				executedTime1 = Time.time;
-				buds = true;
+				dogPicture = true;
 				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Oh, thanks! I lost these!");
 				NPCLike = true;
 				talkCounter = 0;

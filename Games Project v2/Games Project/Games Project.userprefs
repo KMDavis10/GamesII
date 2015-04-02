@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Items\Item.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Henry.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\Controls.js" Line="29" Column="24" />
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="14" Column="4" />
+      <File FileName="Assets\Objects\Scripts\Henry.js" Line="24" Column="14" />
+      <File FileName="Assets\Objects\Scripts\Controls.js" Line="1" Column="1" />
       <File FileName="Assets\Inventory\Scripts\Items\ItemEffect.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="14" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="60" Column="57" />
-      <File FileName="Assets\Objects\Scripts\Knife.js" Line="47" Column="4" />
-      <File FileName="Assets\Objects\Scripts\Carrots.js" Line="27" Column="18" />
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Carrots.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Randall.js" Line="120" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
