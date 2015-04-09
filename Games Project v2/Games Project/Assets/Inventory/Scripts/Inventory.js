@@ -4,8 +4,9 @@ var Contents : Transform[]; //The content of the Inventory
 //An array that the NPC classes can access - made up of Strings
 static var inventoryItems: String[];
 static var count = 0;
+var knifeTake = false;
 //static var remainingActions = 0;
-var MaxContent : int = 12; //The maximum number of items the Player can carry.
+var MaxContent : int = 5; //The maximum number of items the Player can carry.
 var DebugMode = true; //If this is turned on the Inventory script will output the base of what it's doing to the Console window.
 
 public static var playersInvDisplay : InventoryDisplay; //Keep track of the InventoryDisplay script.
@@ -17,6 +18,7 @@ static var itemHolderObject : Transform; //The object the unactive items are goi
 //Handle components and assign the itemHolderObject.
 function Awake ()
 {
+	DontDestroyOnLoad (this);
 	inventoryItems = new String[100];
 	itemHolderObject = gameObject.transform;
 	playersInvDisplay = GetComponent(InventoryDisplay);
@@ -30,12 +32,23 @@ function Awake ()
 //Add an item to the inventory.
 function AddItem(Item:Transform)
 {
-
 	var newContents = new Array(Contents);
 	newContents.Add(Item);
 	Contents=newContents.ToBuiltin(Transform); //Array to unity builtin array
 	//Item name that is picked up is added to the String array at position count (initialized to 0).
-	inventoryItems[count] = Item.name;
+	for (var i = 0; i < count; i++) {
+		if (inventoryItems[i] == "Knife" && Item.name == "Knife") {
+		
+			knifeTake = true;
+		}
+	}
+	if (Item.name == "Knife" && knifeTake == true) {
+	
+	}
+	else {
+		inventoryItems[count] = Item.name;
+	}
+	
 	if (DebugMode)
 	{
 		Debug.Log(inventoryItems[count]+" has been added to inventory");
@@ -115,6 +128,9 @@ function DebugInfo()
 	items=0;
 	for(var i:Transform in Contents){
 		items++;
+		if (i.tag == "I am a knife, ooooooh!"){
+			this.AddItem(i);
+		}
 		Debug.Log(i.name);
 	}
 	Debug.Log("Inventory contains "+items+" Item(s)");

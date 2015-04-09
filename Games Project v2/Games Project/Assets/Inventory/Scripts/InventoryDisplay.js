@@ -82,14 +82,14 @@ function Update()
 		if (displayInventory)
 		{
 			displayInventory = false;
-			
+			Screen.lockCursor = true;
 			gameObject.SendMessage ("ChangedState", false, SendMessageOptions.DontRequireReceiver);
 			gameObject.SendMessage("PauseGame", false, SendMessageOptions.DontRequireReceiver); //StopPauseGame/EnableMouse/ShowMouse
 		}
 		else
 		{
 			displayInventory = true;
-			
+			Screen.lockCursor = false;
 			gameObject.SendMessage ("ChangedState", true, SendMessageOptions.DontRequireReceiver);
 			gameObject.SendMessage("PauseGame", true, SendMessageOptions.DontRequireReceiver); //PauseGame/DisableMouse/HideMouse
 		}

@@ -12,7 +12,11 @@ public class Knife extends MonoBehaviour {
 
 	// Use this for initialization
 	function Start () {
-
+		
+	}
+	
+	function Awake () {
+		DontDestroyOnLoad (this);
 	}
 
 	// Update is called once per frame
@@ -25,19 +29,15 @@ public class Knife extends MonoBehaviour {
 			if(currentTime - executedTime > timeToWait)
 			{
 				if (yesButtonClick == true && noButtonClick == false) {
-					/*Debug.Log("ehhhhh");
 					if(Controls.remainingActions >= 2){
 						for (var i = 0; i < Inventory.inventoryItems.length; i++) {
-							Debug.Log("ohhhhh");
 							if (Inventory.inventoryItems[i] == "Knife") {
 								Debug.Log("eyyyy");
 								Controls.remainingActions = Controls.remainingActions - 2;
-								//Inventory.inventoryArray.Insert(Inventory.listCount, "knife");
-								//Inventory.listCount++;
 								knifeTake = true;
 							}
 						}
-					}*/
+					}
 				}  
 			}
 			executedTime = 0.0f;

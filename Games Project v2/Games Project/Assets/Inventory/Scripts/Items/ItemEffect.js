@@ -3,6 +3,7 @@
 
 var deleteOnUse = true;
 var sayItemWords = true;
+var question = false;
 
 private var playersInv : Inventory;
 private var item : Item;
@@ -23,6 +24,7 @@ function Awake ()
 }
 
 //This is called when the object should be used.
+
 function UseEffect () 
 {
 	//Debug.LogWarning("geh"); //INSERT CUSTOM CODE HERE!
@@ -34,9 +36,24 @@ function UseEffect ()
 	if (sayItemWords == true)
 	{
 		ItemWords(); 
+		question = true;
 		//DeleteUsedItem();
 	}
 }
+
+function OnGUI () {
+	if (question) {
+		if (GUI.Button (new Rect (20,40,220,20), "Toss it?")){
+				DeleteUsedItem();
+				question = false;
+			}
+		if (GUI.Button (new Rect (20,80,250,20), "Keep it?")){
+			question = false;
+		}
+	}
+}
+
+
 
 function ItemWords() 
 {
