@@ -65,6 +65,7 @@
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.js" />
      <Compile Include="Assets\Objects\Scripts\Randall.js" />
      <Compile Include="Assets\Objects\Scripts\StoreCamera.js" />
+     <Compile Include="Assets\pa.js" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/atlas_000/Desktop/GamesII/Games Project v2/Games Project/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>

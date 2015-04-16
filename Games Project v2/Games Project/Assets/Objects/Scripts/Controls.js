@@ -62,7 +62,7 @@ public class Controls extends MonoBehaviour
 				Henry.transform.position = Vector3(50,0,50);
 				Randall.transform.position = Vector3(60,0,60);
 				Veronica.transform.position = Vector3(70,0,70);
-				Player.transform.position = Vector3(80,10,80);
+				Player.transform.position = Vector3(125,10,10);
 			}
 		}
 	}
