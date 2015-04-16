@@ -57,8 +57,13 @@
      <Compile Include="Assets\Inventory\Scripts\Other\InvAudio.js" />
      <Compile Include="Assets\Inventory\Scripts\Other\InvPauseGame.js" />
      <Compile Include="Assets\Inventory\Scripts\Other\WeaponSwitch.js" />
+     <Compile Include="Assets\Objects\Scripts\CandyWrapper.js" />
      <Compile Include="Assets\Objects\Scripts\Carrots.js" />
      <Compile Include="Assets\Objects\Scripts\Controls.js" />
+     <Compile Include="Assets\Objects\Scripts\DanglyEarrings.js" />
+     <Compile Include="Assets\Objects\Scripts\DogPicture.js" />
+     <Compile Include="Assets\Objects\Scripts\Earbuds.js" />
+     <Compile Include="Assets\Objects\Scripts\GuineaPigPellets.js" />
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
      <Compile Include="Assets\Objects\Scripts\Knife.js" />
      <Compile Include="Assets\Objects\Scripts\LegOfLamb.js" />
