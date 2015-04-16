@@ -1,16 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Items\ItemEffect.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Controls.js">
     <Files>
-      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="21" Column="2" />
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Controls.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Items\ItemEffect.js" Line="72" Column="3" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Carrots.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Randall.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\InventoryDisplay.js" Line="221" Column="2" />
+      <File FileName="Assets\Objects\Scripts\Henry.js" Line="141" Column="24" />
+      <File FileName="Assets\Objects\Scripts\Controls.js" Line="65" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

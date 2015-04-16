@@ -2,6 +2,10 @@
 
 public class Controls extends MonoBehaviour
 {
+	var Henry: GameObject;
+	var Randall: GameObject;
+	var Veronica: GameObject;
+	var Player: GameObject;
 	public static var levels: String[] = new String[18];
 	public static var inventoryArray: String[] = new String[18];;
 	public static var henryMotiveArray: String[] = new String[18];
@@ -30,14 +34,7 @@ public class Controls extends MonoBehaviour
 	private var timeToWait: float = 2.0f;
 
 	function Start () {
-		levels [0] = "On Job Day 1";
-		levels [1] = "On Break Day 1";
-		levels [2] = "On Job Day 2";
-		levels [3] = "On Break Day 2";
-		levels [4] = "On Job Day 3";
-		levels [5] = "On Break Day 3";
-		//levels [6] = "On Job Day 4";
-		print("Inventory loaded: Level count: " + levelCount);
+		
 	}
 	
 	function Update ()
@@ -49,17 +46,23 @@ public class Controls extends MonoBehaviour
 		if (levelCount % 2 != 0) { 
 			maxActions = 2;
 			if (remainingActions <= 0) {
-				Application.LoadLevel (levels[levelCount]);
 				levelCount++;
 				remainingActions = 6;
+				Henry.transform.position = Vector3(50,0,50);
+				Randall.transform.position = Vector3(60,0,60);
+				Veronica.transform.position = Vector3(70,0,70);
+				Player.transform.position = Vector3(80,10,80);
 			}
 		} 
 		else {
 			maxActions = 6;
 			if (remainingActions <= 0) {
-				Application.LoadLevel (levels[levelCount]);
 				levelCount++;
 				remainingActions = 2;
+				Henry.transform.position = Vector3(50,0,50);
+				Randall.transform.position = Vector3(60,0,60);
+				Veronica.transform.position = Vector3(70,0,70);
+				Player.transform.position = Vector3(80,10,80);
 			}
 		}
 	}

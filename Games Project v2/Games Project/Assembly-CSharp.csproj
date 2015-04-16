@@ -58,6 +58,7 @@
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript1.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerNoStuff.cs" />
      <Compile Include="Assets\Objects\Scripts\lockerStuff.cs" />
+     <Compile Include="Assets\pa.cs" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
