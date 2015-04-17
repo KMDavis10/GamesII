@@ -7,10 +7,10 @@ public class Controls extends MonoBehaviour
 	var Veronica: GameObject;
 	var Player: GameObject;
 	public static var levels: String[] = new String[18];
-	public static var inventoryArray: String[] = new String[18];;
-	public static var henryMotiveArray: String[] = new String[18];
-	public static var randallMotiveArray: String[] = new String[18];
-	public static var veronicaMotiveArray: String[] = new String[18];
+	public static var inventoryArray: String[] = new String[18];
+	public static var henryMotiveArray = Array();
+	public static var randallMotiveArray = Array();
+	public static var veronicaMotiveArray = Array();
 	public static var listCount: int = 0;
 	public static var emptyCount: int = 0;
 	public static var maxActions: int = 0;
@@ -48,9 +48,9 @@ public class Controls extends MonoBehaviour
 			if (remainingActions <= 0) {
 				levelCount++;
 				remainingActions = 6;
-				Henry.transform.position = Vector3(50,0,50);
-				Randall.transform.position = Vector3(60,0,60);
-				Veronica.transform.position = Vector3(70,0,70);
+				Henry.transform.position = Vector3(30,0, 100);
+				Randall.transform.position = Vector3(65,0,175);
+				Veronica.transform.position = Vector3(100,0,20);
 				Player.transform.position = Vector3(80,10,80);
 			}
 		} 
@@ -59,9 +59,9 @@ public class Controls extends MonoBehaviour
 			if (remainingActions <= 0) {
 				levelCount++;
 				remainingActions = 2;
-				Henry.transform.position = Vector3(50,0,50);
-				Randall.transform.position = Vector3(60,0,60);
-				Veronica.transform.position = Vector3(70,0,70);
+				Henry.transform.position = Vector3(30,0, 100);
+				Randall.transform.position = Vector3(65,0,15);
+				Veronica.transform.position = Vector3(170,0,10);
 				Player.transform.position = Vector3(125,10,10);
 			}
 		}

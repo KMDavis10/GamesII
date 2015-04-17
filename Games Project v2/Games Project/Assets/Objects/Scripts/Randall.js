@@ -58,15 +58,15 @@ function Update () {
 			present = false;
 			if (dialog) {
 				if (randomNum == 3 && npcWords[randomNum] != "empty"){
-					//Inventory.henryMotiveArray.Add(npcWords[randomNum]); 
+					Controls.henryMotiveArray.Push(npcWords[randomNum]); 
 					likedWordCount++;
 				}
 				if (randomNum == 4 && npcWords[randomNum] != "empty") {
-					//Inventory.veronicaMotiveArray.Add(npcWords[randomNum]);
+					Controls.veronicaMotiveArray.Push(npcWords[randomNum]);
 					likedWordCount++;
 				}
 				if (randomNum == 5 && npcWords[randomNum] != "empty") {
-					//Inventory.randallMotiveArray.Add(npcWords[randomNum]);
+					Controls.randallMotiveArray.Push(npcWords[randomNum]);
 					likedWordCount++;
 				}
 				npcWords[randomNum] = "empty";
