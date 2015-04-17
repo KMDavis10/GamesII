@@ -36,19 +36,7 @@ function AddItem(Item:Transform)
 	newContents.Add(Item);
 	Contents=newContents.ToBuiltin(Transform); //Array to unity builtin array
 	//Item name that is picked up is added to the String array at position count (initialized to 0).
-	for (var i = 0; i < count; i++) {
-		if (inventoryItems[i] == "Knife" && Item.name == "Knife") {
-		
-			knifeTake = true;
-		}
-	}
-	if (Item.name == "Knife" && knifeTake == true) {
-	
-	}
-	else {
-		inventoryItems[count] = Item.name;
-	}
-	
+	inventoryItems[count] = Item.name;
 	if (DebugMode)
 	{
 		Debug.Log(inventoryItems[count]+" has been added to inventory");

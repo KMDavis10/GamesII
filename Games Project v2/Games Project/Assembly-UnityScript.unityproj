@@ -59,12 +59,14 @@
      <Compile Include="Assets\Inventory\Scripts\Other\WeaponSwitch.js" />
      <Compile Include="Assets\Objects\Scripts\Carrots.js" />
      <Compile Include="Assets\Objects\Scripts\Controls.js" />
+     <Compile Include="Assets\Objects\Scripts\Earbuds.js" />
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
      <Compile Include="Assets\Objects\Scripts\Knife.js" />
      <Compile Include="Assets\Objects\Scripts\LegOfLamb.js" />
      <Compile Include="Assets\Objects\Scripts\NewBehaviourScript.js" />
      <Compile Include="Assets\Objects\Scripts\Randall.js" />
      <Compile Include="Assets\Objects\Scripts\StoreCamera.js" />
+     <Compile Include="Assets\Objects\Scripts\Veronica.js" />
      <Compile Include="Assets\pa.js" />
      <None Include="Assets\Inventory\Credits + C#.txt" />
  <Reference Include="UnityEngine.UI">

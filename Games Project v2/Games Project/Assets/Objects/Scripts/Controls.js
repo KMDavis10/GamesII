@@ -32,6 +32,9 @@ public class Controls extends MonoBehaviour
 	private var currentTime: float = 0.0f;
 	private var executedTime: float = 0.0f;
 	private var timeToWait: float = 2.0f;
+	public var henryCam: Camera;
+	public var randallCam: Camera;
+	public var veronicaCam: Camera;
 
 	function Start () {
 		
@@ -48,9 +51,12 @@ public class Controls extends MonoBehaviour
 			if (remainingActions <= 0) {
 				levelCount++;
 				remainingActions = 6;
-				Henry.transform.position = Vector3(30,0, 100);
+				Henry.transform.position = Vector3(30,0, 140);
+				henryCam.transform.position = Vector3(29, 8, 137);
 				Randall.transform.position = Vector3(65,0,175);
+				randallCam.transform.position = Vector3(68, 6, 180);
 				Veronica.transform.position = Vector3(100,0,20);
+				veronicaCam.transform.position = Vector3(99, 6, 23);
 				Player.transform.position = Vector3(80,10,80);
 			}
 		} 
@@ -60,8 +66,11 @@ public class Controls extends MonoBehaviour
 				levelCount++;
 				remainingActions = 2;
 				Henry.transform.position = Vector3(30,0, 100);
+				henryCam.transform.position = Vector3(29, 8, 97);
 				Randall.transform.position = Vector3(65,0,15);
+				randallCam.transform.position = Vector3(67, 6, 20);
 				Veronica.transform.position = Vector3(170,0,10);
+				veronicaCam.transform.position = Vector3(169, 6, 13);
 				Player.transform.position = Vector3(125,10,10);
 			}
 		}

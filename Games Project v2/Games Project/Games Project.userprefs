@@ -1,10 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Controls.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="69" Column="40" />
-      <File FileName="Assets\Objects\Scripts\Controls.js" Line="52" Column="44" />
-      <File FileName="Assets\Objects\Scripts\Randall.js" Line="78" Column="20" />
+      <File FileName="Assets\Objects\Scripts\Earbuds.js" Line="19" Column="20" />
+      <File FileName="Assets\Objects\Scripts\Henry.js" Line="186" Column="31" />
+      <File FileName="Assets\Objects\Scripts\Randall.js" Line="12" Column="24" />
+      <File FileName="Assets\Objects\Scripts\Veronica.js" Line="179" Column="31" />
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
+      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="10" Column="24" />
+      <File FileName="Assets\Objects\Scripts\Controls.js" Line="59" Column="51" />
+      <File FileName="Assets\Objects\Scripts\Knife.js" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

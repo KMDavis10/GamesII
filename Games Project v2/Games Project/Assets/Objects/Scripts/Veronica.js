@@ -4,7 +4,7 @@ private var npcWords: String[];
 var presentEvidence : boolean[];
 var evidence = false; 
 var cashWad = false; 
-var buds = false; 
+var carrots = false; 
 var displayText = false; 
 var present = false;
 var dialog = false;
@@ -20,7 +20,7 @@ var clickCount: int = 0;
 var talkCounter: int = 0;
 var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
-var henryCam: Camera;
+var veronicaCam: Camera;
 var playerCam: Camera;  
 
 // Use this for initialization
@@ -58,7 +58,7 @@ function Update () {
 			present = false;
 			if (dialog) {
 				if (randomNum == 3 && npcWords[randomNum] != "empty"){
-					Controls.henryMotiveArray.Push(npcWords[randomNum]); 
+					Controls.veronicaMotiveArray.Push(npcWords[randomNum]); 
 					likedWordCount++;
 				}
 				if (randomNum == 4 && npcWords[randomNum] != "empty") {
@@ -72,7 +72,7 @@ function Update () {
 				npcWords[randomNum] = "empty";
 				dislikedWordCount++;
 				//player.canMove = true;
-				henryCam.enabled = false;
+				veronicaCam.enabled = false;
 				playerCam.enabled = true;
 				
 				dialog = false;
@@ -84,7 +84,7 @@ function Update () {
 				Inventory.inventoryItems[temp] = "empty";
 				cashWad = false; 
 			}
-			if (buds) {
+			if (carrots) {
 				/**int temp = Inventory.inventoryItems.IndexOf("earbuds");
 				Inventory.inventoryItems.Remove("earbuds");
 				Inventory.inventoryItems.Insert(temp, "empty");
@@ -95,7 +95,7 @@ function Update () {
 		}
 	}
 	if(Input.GetKey(KeyCode.Escape)) {
-		henryCam.enabled = false;
+		veronicaCam.enabled = false;
 		playerCam.enabled = true;
 		present = false;
 		dialog = false;
@@ -106,8 +106,8 @@ function Update () {
 
 function OnMouseDown() {
 	Camera.main.enabled = false;
-	henryCam.enabled = true;
-	//Debug.Log(henryCam.gameObject.name);
+	veronicaCam.enabled = true;
+	//Debug.Log(veronicaCam.gameObject.name);
 	displayText = true;
 	//player.canMove = false;
 	clickCount++;
@@ -135,7 +135,7 @@ function OnGUI() {
 		}
 	}
 	if (displayText) {
-		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to Henry")) {
+		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to veronica")) {
 			dialog = true;
 			executedTime1 = Time.time;
 			if (talkCounter < 3)
@@ -173,11 +173,11 @@ function OnGUI() {
 			if (evidence && Inventory.inventoryItems[j] == "cash") {
 				executedTime1 = Time.time;
 				cashWad = true;
-				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Henry snatches the cash wad. Ha-ha!");
+				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Veronica snatches the cash wad. Ha-ha!");
 			}
-			else if (evidence && Inventory.inventoryItems[j] == "Earbuds") { 
+			else if (evidence && Inventory.inventoryItems[j] == "Carrots") { 
 				executedTime1 = Time.time;
-				buds = true;
+				carrots = true;
 				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Oh, thanks! I lost these!");
 				NPCLike = true;
 				talkCounter = 0;
@@ -187,5 +187,6 @@ function OnGUI() {
 				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "You presented " + Inventory.inventoryItems[j] + ". They didn't like it.");
 			}
 		}
+
 	}
 } 

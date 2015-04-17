@@ -1,6 +1,6 @@
 ﻿#pragma strict
 public class Knife extends MonoBehaviour { 
-	public var knifeWords;
+	public var knifeWords = "Dang, yo! It's a knife!";
 	var displayText = false;
 	static var yesButtonClick = false;
 	var noButtonClick = false;
