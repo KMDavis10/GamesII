@@ -51,7 +51,7 @@ function Awake ()
 function OnMouseDown()
 {
 	//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
-	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && Earbuds.yesButtonClick)
+	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && Earbuds.yesButtonClick || FPPickUpFound == false && Scissors.yesButtonClick)
 	{
 		if (Controls.remainingActions >= 2) {
 			PickUpItem();
