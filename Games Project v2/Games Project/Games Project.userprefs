@@ -1,16 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Controls.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\Earbuds.js" Line="19" Column="20" />
-      <File FileName="Assets\Objects\Scripts\Henry.js" Line="186" Column="31" />
-      <File FileName="Assets\Objects\Scripts\Randall.js" Line="12" Column="24" />
-      <File FileName="Assets\Objects\Scripts\Veronica.js" Line="179" Column="31" />
-      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="1" Column="1" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="10" Column="24" />
-      <File FileName="Assets\Objects\Scripts\Controls.js" Line="59" Column="51" />
-      <File FileName="Assets\Objects\Scripts\Knife.js" Line="12" Column="1" />
+      <File FileName="Assets\Objects\Scripts\Controls.js" Line="16" Column="40" />
+      <File FileName="Assets\Objects\Scripts\Earbuds.js" Line="50" Column="20" />
+      <File FileName="Assets\Objects\Scripts\Henry.js" Line="60" Column="35" />
+      <File FileName="Assets\Objects\Scripts\Randall.js" Line="69" Column="66" />
+      <File FileName="Assets\Objects\Scripts\Veronica.js" Line="69" Column="66" />
+      <File FileName="Assets\Inventory\Scripts\Inventory.js" Line="39" Column="22" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="98" Column="34" />
+      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="20" Column="47" />
+      <File FileName="Assets\Objects\Scripts\Knife.js" Line="25" Column="20" />
+      <File FileName="Assets\Inventory\Scripts\Items\ItemEffect.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
