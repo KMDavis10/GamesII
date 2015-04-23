@@ -53,12 +53,7 @@ function OnMouseDown()
 	//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
 	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && Earbuds.yesButtonClick || FPPickUpFound == false && Scissors.yesButtonClick)
 	{
-		if (Controls.remainingActions >= 2) {
 			PickUpItem();
-		}
-		else {
-			Debug.Log("Not enough action points to pick this up");
-		}
 	}
 }
 
@@ -92,8 +87,17 @@ function PickUpItem ()
 		//If we can get it and the inventory isn't full.
 		if (getit && playersinv.Contents.length < playersinv.MaxContent)
 		{
-			playersinv.AddItem(this.transform);
-			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+				//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
+			if (FPPickUpFound == false && Carrots.yesButtonClick && this.transform.tag == "I am carrots, ooooooh!" || FPPickUpFound == false && Knife.yesButtonClick && this.transform.tag == "I am a knife, ooooooh!" || FPPickUpFound == false && LegOfLamb.yesButtonClick && this.transform.tag == "I am a leg of lamb, ooooooh!"|| FPPickUpFound == false && Earbuds.yesButtonClick && this.transform.tag == "I am earbuds, ooooooh!")
+			{
+				if (Controls.remainingActions >= 2) {
+					playersinv.AddItem(this.transform);
+					MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+				}
+				else {
+					Debug.Log("Not enough action points to pick this up");
+				}
+			}
 		}
 		else if (playersinv.Contents.length >= playersinv.MaxContent)
 		{

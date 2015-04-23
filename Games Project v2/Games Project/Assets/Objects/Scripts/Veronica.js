@@ -58,15 +58,15 @@ function Update () {
 			present = false;
 			if (dialog) {
 				if (randomNum == 3 && npcWords[randomNum] != "empty"){
-					Controls.veronicaMotiveArray.Push(npcWords[randomNum]); 
+					Controls.henryMotiveArray[randomNum] = npcWords[randomNum];
 					likedWordCount++;
 				}
 				if (randomNum == 4 && npcWords[randomNum] != "empty") {
-					Controls.veronicaMotiveArray.Push(npcWords[randomNum]);
+					Controls.veronicaMotiveArray[randomNum] = npcWords[randomNum];
 					likedWordCount++;
 				}
 				if (randomNum == 5 && npcWords[randomNum] != "empty") {
-					Controls.randallMotiveArray.Push(npcWords[randomNum]);
+					Controls.randallMotiveArray[randomNum] = npcWords[randomNum];
 					likedWordCount++;
 				}
 				npcWords[randomNum] = "empty";
