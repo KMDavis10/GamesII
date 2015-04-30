@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Scripts\Earbuds.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Inventory\Scripts\Character.js">
     <Files>
-      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="21" Column="3" />
+      <File FileName="Assets\Inventory\Scripts\Character.js" Line="230" Column="5" />
+      <File FileName="Assets\Objects\Scripts\LegOfLamb.js" Line="1" Column="1" />
       <File FileName="Assets\Objects\Scripts\Knife.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Scripts\Scissors.js" Line="24" Column="27" />
-      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="189" Column="2" />
+      <File FileName="Assets\Objects\Scripts\Scissors.js" Line="1" Column="1" />
+      <File FileName="Assets\Inventory\Scripts\Items\Item.js" Line="1" Column="1" />
       <File FileName="Assets\Objects\Scripts\Earbuds.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

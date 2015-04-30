@@ -227,12 +227,12 @@ function OnGUI()
 	if(csheet) //If the csheet is opened up.
 	{
 		//Make a window that shows what's in the csheet called "Character" and update the position and size variables from the window variables.
-		windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "Character");
+		//windowRect=GUI.Window (1, windowRect, DisplayCSheetWindow, "Character");
 	}
 }
 
 //This will display the character sheet and handle the buttons.
-function DisplayCSheetWindow(windowID:int)
+/*function DisplayCSheetWindow(windowID:int)
 {
 	if (canBeDragged == true)
 	{
@@ -278,4 +278,4 @@ function DisplayCSheetWindow(windowID:int)
 		}
 		index++;
 	}
-}
+} */
