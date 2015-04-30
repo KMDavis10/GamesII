@@ -63,6 +63,7 @@
      <Compile Include="Assets\Objects\Scripts\Henry.js" />
      <Compile Include="Assets\Objects\Scripts\Knife.js" />
      <Compile Include="Assets\Objects\Scripts\LegOfLamb.js" />
+     <Compile Include="Assets\Objects\Scripts\LockCursor.js" />
      <Compile Include="Assets\Objects\Scripts\Randall.js" />
      <Compile Include="Assets\Objects\Scripts\Scissors.js" />
      <Compile Include="Assets\Objects\Scripts\StoreCamera.js" />

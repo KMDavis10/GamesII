@@ -88,7 +88,7 @@ function PickUpItem ()
 		if (getit && playersinv.Contents.length < playersinv.MaxContent)
 		{
 				//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
-			if (FPPickUpFound == false && Carrots.yesButtonClick && this.transform.tag == "I am carrots, ooooooh!" || FPPickUpFound == false && Knife.yesButtonClick && this.transform.tag == "I am a knife, ooooooh!" || FPPickUpFound == false && LegOfLamb.yesButtonClick && this.transform.tag == "I am a leg of lamb, ooooooh!"|| FPPickUpFound == false && Earbuds.yesButtonClick && this.transform.tag == "I am earbuds, ooooooh!")
+			if (FPPickUpFound == false && Carrots.yesButtonClick && this.transform.tag == "I am carrots, ooooooh!" || FPPickUpFound == false && Knife.yesButtonClick && this.transform.tag == "I am a knife, ooooooh!" || FPPickUpFound == false && LegOfLamb.yesButtonClick && this.transform.tag == "I am a leg of lamb, ooooooh!"|| FPPickUpFound == false && Earbuds.yesButtonClick && this.transform.tag == "I am earbuds, ooooooh!" || FPPickUpFound == false && Scissors.yesButtonClick && this.transform.tag == "I am scissors, ooooooh!")
 			{
 				if (Controls.remainingActions >= 2) {
 					playersinv.AddItem(this.transform);

@@ -8,9 +8,9 @@ public class Controls extends MonoBehaviour
 	var Player: GameObject;
 	public static var levels: String[] = new String[18];
 	public static var inventoryArray: String[] = new String[18];
-	public static var henryMotiveArray: String[] = new String[3];
-	public static var randallMotiveArray: String[] = new String[3];
-	public static var veronicaMotiveArray: String[] = new String[3];
+	public static var henryMotiveArray: String[] = new String[6];
+	public static var randallMotiveArray: String[] = new String[6];
+	public static var veronicaMotiveArray: String[] = new String[6];
 	public static var listCount: int = 0;
 	public static var emptyCount: int = 0;
 	public static var maxActions: int = 0;
