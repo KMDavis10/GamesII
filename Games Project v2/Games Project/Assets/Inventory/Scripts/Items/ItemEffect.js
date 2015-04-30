@@ -67,7 +67,8 @@ function DeleteUsedItem()
 	// being deleted. 
 	for (var i = 0; i < Inventory.count; i++) {
 		if (Inventory.inventoryItems[i] == item.name) {
-			Inventory.inventoryItems[i] == null;
+			Debug.Log("shish");
+			Inventory.inventoryItems[i] = null;
 		}
 	}
 	if (item.stack == 1) //Remove item

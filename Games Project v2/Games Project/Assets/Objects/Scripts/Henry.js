@@ -151,7 +151,7 @@ function OnGUI() {
 	if (present) {
 		displayText = false;
 		for (var i = 0; i < Inventory.count; i++) {
-			if (!Inventory.inventoryItems[i].Equals("empty")) {
+			if (Inventory.inventoryItems[i] != null) {
 				if (GUI.Button(new Rect(20, i*20, 200, 20), Inventory.inventoryItems[i])) {
 					presentEvidence[i] = true;
 					evidence = true;
