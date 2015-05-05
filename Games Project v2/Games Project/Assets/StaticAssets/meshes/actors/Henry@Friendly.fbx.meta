@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6442bc46e5854174d9fe640aea4e8a49
+guid: 986e53333061eba469a99c3e6a72dacb
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -313,25 +313,8 @@ ModelImporter:
     400304: TongueR
     400306: UpperLidL
     400308: UpperLidR
-    4300000: m_TeethUp
-    4300002: m_L_gland
-    4300004: m_L_eye
-    4300006: m_L_trans
-    4300008: m_R_gland
-    4300010: m_R_eye
-    4300012: m_R_trans
-    4300014: H_DDS_MidRes
-    4300016: m_TeethDown
+    7400000: Take 001
     9500000: //RootNode
-    13700000: H_DDS_MidRes
-    13700002: m_L_eye
-    13700004: m_L_gland
-    13700006: m_L_trans
-    13700008: m_R_eye
-    13700010: m_R_gland
-    13700012: m_R_trans
-    13700014: m_TeethDown
-    13700016: m_TeethUp
   materials:
     importMaterials: 1
     materialName: 0
@@ -370,7 +353,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     human: []
     skeleton: []
@@ -382,7 +365,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6442bc46e5854174d9fe640aea4e8a49,
+    type: 3}
   animationType: 2
   additionalBone: 0
   userData: 
