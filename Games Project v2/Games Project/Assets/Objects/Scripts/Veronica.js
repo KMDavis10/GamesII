@@ -4,7 +4,7 @@ private var npcWords: String[];
 var presentEvidence : boolean[];
 var evidence = false; 
 var cashWad = false; 
-var carrots = false; 
+var buds = false; 
 var displayText = false; 
 var present = false;
 var dialog = false;
@@ -58,7 +58,7 @@ function Update () {
 			present = false;
 			if (dialog) {
 				if (randomNum == 3 && npcWords[randomNum] != "empty"){
-					Controls.henryMotiveArray[randomNum] = npcWords[randomNum];
+					Controls.henryMotiveArray[randomNum] = npcWords[randomNum]; 
 					likedWordCount++;
 				}
 				if (randomNum == 4 && npcWords[randomNum] != "empty") {
@@ -84,7 +84,7 @@ function Update () {
 				Inventory.inventoryItems[temp] = "empty";
 				cashWad = false; 
 			}
-			if (carrots) {
+			if (buds) {
 				/**int temp = Inventory.inventoryItems.IndexOf("earbuds");
 				Inventory.inventoryItems.Remove("earbuds");
 				Inventory.inventoryItems.Insert(temp, "empty");
@@ -105,7 +105,7 @@ function Update () {
 }
 
 function OnMouseDown() {
-	Camera.main.enabled = false;
+	playerCam.enabled = false;
 	veronicaCam.enabled = true;
 	//Debug.Log(veronicaCam.gameObject.name);
 	displayText = true;
@@ -135,7 +135,7 @@ function OnGUI() {
 		}
 	}
 	if (displayText) {
-		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to veronica")) {
+		if (GUI.Button (new Rect (20, 80, 200, 20), "Talk to Veronica")) {
 			dialog = true;
 			executedTime1 = Time.time;
 			if (talkCounter < 3)
@@ -151,7 +151,7 @@ function OnGUI() {
 	if (present) {
 		displayText = false;
 		for (var i = 0; i < Inventory.count; i++) {
-			if (!Inventory.inventoryItems[i].Equals("empty")) {
+			if (Inventory.inventoryItems[i] != null) {
 				if (GUI.Button(new Rect(20, i*20, 200, 20), Inventory.inventoryItems[i])) {
 					presentEvidence[i] = true;
 					evidence = true;
@@ -177,7 +177,7 @@ function OnGUI() {
 			}
 			else if (evidence && Inventory.inventoryItems[j] == "Carrots") { 
 				executedTime1 = Time.time;
-				carrots = true;
+				buds = true;
 				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "Oh, thanks! I lost these!");
 				NPCLike = true;
 				talkCounter = 0;
@@ -187,6 +187,5 @@ function OnGUI() {
 				GUI.Box(new Rect(0, 0, Screen.width, Screen.height-200), "You presented " + Inventory.inventoryItems[j] + ". They didn't like it.");
 			}
 		}
-
 	}
 } 

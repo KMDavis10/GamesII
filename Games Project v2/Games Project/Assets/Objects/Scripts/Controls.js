@@ -77,7 +77,7 @@ public class Controls extends MonoBehaviour
 	}
 
 	function OnGUI() {
-		GUI.Box (new Rect(650, 300, 200, 25), "Action points remaining: " + remainingActions.ToString());
+		GUI.Box (new Rect(Screen.width - 200,Screen.height - 50,170,25), "Action points remaining: " + remainingActions.ToString());
 
 		if (endGame) {
 			print1 = false;
