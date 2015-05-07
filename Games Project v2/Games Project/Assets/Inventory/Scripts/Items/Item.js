@@ -55,7 +55,6 @@ function OnMouseDown()
 	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && Earbuds.yesButtonClick || FPPickUpFound == false && Scissors.yesButtonClick)
 	{
 			PickUpItem();
-			playerCam.enabled = true;
 	}
 }
 
@@ -92,9 +91,11 @@ function PickUpItem ()
 				//If the 'FirstPersonPickUp' script is not attached we want to pick up the item.
 			if (FPPickUpFound == false && Carrots.yesButtonClick && this.transform.tag == "I am carrots, ooooooh!" || FPPickUpFound == false && Knife.yesButtonClick && this.transform.tag == "I am a knife, ooooooh!" || FPPickUpFound == false && LegOfLamb.yesButtonClick && this.transform.tag == "I am a leg of lamb, ooooooh!"|| FPPickUpFound == false && Earbuds.yesButtonClick && this.transform.tag == "I am earbuds, ooooooh!" || FPPickUpFound == false && Scissors.yesButtonClick && this.transform.tag == "I am scissors, ooooooh!")
 			{
+				Debug.Log("shish");
 				if (Controls.remainingActions >= 2) {
 					playersinv.AddItem(this.transform);
 					MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+					Controls.remainingActions = Controls.remainingActions-2;
 				}
 				else {
 					Debug.Log("Not enough action points to pick this up");

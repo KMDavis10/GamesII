@@ -23,7 +23,7 @@ function Update () {
 function OnMouseDown()
 {
 	Screen.lockCursor = false;
-	if (randall.displayText || randall.present || henry.displayText || henry.present || veronica.displayText || veronica.present || scissors.displayText || knife.displayText || earbuds.displayText || legoflamb.displayText || carrots.displayText || InventoryDisplay.displayInventory || Knife.yesButtonClick && this.contains(Inventory.inventoryItems, "Knife", Inventory.count) == -1)
+	if (randall.displayText || randall.present || henry.displayText || henry.present || veronica.displayText || veronica.present || scissors.displayText || knife.displayText || earbuds.displayText || legoflamb.displayText || carrots.displayText || InventoryDisplay.displayInventory || Knife.yesButtonClick && this.contains(Inventory.inventoryItems, "Knife", Inventory.count) == -1 || Controls.endGame)
 	{
 		Screen.lockCursor = false;
 		//veronica.displayText

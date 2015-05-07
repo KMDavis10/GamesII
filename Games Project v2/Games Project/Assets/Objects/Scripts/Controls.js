@@ -7,7 +7,7 @@ public class Controls extends MonoBehaviour
 	var Veronica: GameObject;
 	var Player: GameObject;
 	public static var levels: String[] = new String[18];
-	public static var inventoryArray: String[] = new String[18];
+	//public static var inventoryArray: String[] = new String[18];
 	public static var henryMotiveArray: String[] = new String[6];
 	public static var randallMotiveArray: String[] = new String[6];
 	public static var veronicaMotiveArray: String[] = new String[6];
@@ -17,7 +17,7 @@ public class Controls extends MonoBehaviour
 	public static var remainingActions: int = 0;
 	public static var levelCount: int = 0;
 	var print1: boolean = false;
-	var endGame: boolean = false;
+	static var endGame: boolean = false;
 	var throwAway: boolean = false;
 	var displayNPCs: boolean = true;
 	var displayMotives: boolean = false;
@@ -118,9 +118,9 @@ public class Controls extends MonoBehaviour
 			}
 			if (displayEvidence) {
 				for (var j = 0; j < Inventory.count; j++) {
-					if (inventoryArray[j].Equals ("empty") == false) {
+					if (Inventory.inventoryItems[j].Equals ("empty") == false) {
 						if (GUI.Button (new Rect ((100 * j), 280, 100, 20), Inventory.inventoryItems[j]) && displayEvidence) {
-							if (Inventory.inventoryItems[j] == "knife") {
+							if (Inventory.inventoryItems[j] == "Knife") {
 								correctMurderWeapon = 1;
 								displayEvidence = false;
 							}
@@ -151,10 +151,10 @@ public class Controls extends MonoBehaviour
 				}
 			}
 			if (displayEvidence2) {
-				for (var l = 0; l < inventoryArray.length; l++) {
+				for (var l = 0; l < Inventory.count; l++) {
 					if (Inventory.inventoryItems[l].Equals ("empty") == false) {
 						if (GUI.Button (new Rect ((100 * l), 280, 100, 20), Inventory.inventoryItems[l]) && displayEvidence2) {
-							if (inventoryArray [l] == "knife") {
+							if (Inventory.inventoryItems [l] == "Knife") {
 								correctMurderWeapon = 2;
 								displayEvidence2 = false;
 							}
@@ -184,10 +184,10 @@ public class Controls extends MonoBehaviour
 				}
 			}
 			if (displayEvidence3) {
-				for (var n = 0; n < inventoryArray.length; n++) {
+				for (var n = 0; n < Inventory.count; n++) {
 					if (Inventory.inventoryItems[n].Equals ("empty") == false) {
 						if (GUI.Button(new Rect ((100 * n), 280, 100, 20), Inventory.inventoryItems[n]) && displayEvidence3) {
-							if (inventoryArray [n] == "knife") {
+							if (Inventory.inventoryItems [n] == "Knife") {
 								correctMurderWeapon = 2;
 								displayEvidence3 = false;
 							}
