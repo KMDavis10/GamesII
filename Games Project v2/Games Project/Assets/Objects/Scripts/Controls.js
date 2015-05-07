@@ -2,9 +2,9 @@
 
 public class Controls extends MonoBehaviour
 {
-	var Henry: GameObject;
-	var Randall: GameObject;
-	var Veronica: GameObject;
+	var NPCHenry: GameObject;
+	var NPCRandall: GameObject;
+	var NPCVeronica: GameObject;
 	var Player: GameObject;
 	public static var levels: String[] = new String[18];
 	//public static var inventoryArray: String[] = new String[18];
@@ -35,6 +35,8 @@ public class Controls extends MonoBehaviour
 	public var henryCam: Camera;
 	public var randallCam: Camera;
 	public var veronicaCam: Camera;
+	var motiveDisplay = false;
+	private var windowRect =Rect (200,200,108,130);
 
 	function Start () {
 		
@@ -51,12 +53,12 @@ public class Controls extends MonoBehaviour
 			if (remainingActions <= 0) {
 				levelCount++;
 				remainingActions = 6;
-				Henry.transform.position = Vector3(30,0, 140);
-				henryCam.transform.position = Vector3(29, 8, 137);
-				Randall.transform.position = Vector3(65,0,175);
-				randallCam.transform.position = Vector3(68, 6, 180);
-				Veronica.transform.position = Vector3(100,0,20);
-				veronicaCam.transform.position = Vector3(99, 6, 23);
+				NPCHenry.transform.position = Vector3(30,0, 140);
+				//henryCam.transform.position = Vector3(29, 8, 137);
+				NPCRandall.transform.position = Vector3(65,0,175);
+				//randallCam.transform.position = Vector3(68, 6, 180);
+				NPCVeronica.transform.position = Vector3(100,0,20);
+				//veronicaCam.transform.position = Vector3(99, 6, 23);
 				Player.transform.position = Vector3(20,10,80);
 			}
 		} 
@@ -65,19 +67,40 @@ public class Controls extends MonoBehaviour
 			if (remainingActions <= 0) {
 				levelCount++;
 				remainingActions = 2;
-				Henry.transform.position = Vector3(30,0, 100);
-				henryCam.transform.position = Vector3(29, 8, 97);
-				Randall.transform.position = Vector3(65,0,15);
-				randallCam.transform.position = Vector3(67, 6, 20);
-				Veronica.transform.position = Vector3(170,0,10);
-				veronicaCam.transform.position = Vector3(170, 7.5, 13);
+				NPCHenry.transform.position = Vector3(30,0, 100);
+				//henryCam.transform.position = Vector3(29, 8, 97);
+				NPCRandall.transform.position = Vector3(65,0,15);
+				//randallCam.transform.position = Vector3(67, 6, 20);
+				NPCVeronica.transform.position = Vector3(170,0,10);
+				//veronicaCam.transform.position = Vector3(170, 7.5, 13);
 				Player.transform.position = Vector3(80,10,10);
 			}
 		}
+		
+		if(Input.GetKey(KeyCode.M)) {
+			if (motiveDisplay)
+			{
+				motiveDisplay = false;
+				Screen.lockCursor = true;
+			}
+			else
+			{
+				motiveDisplay = true;
+				Screen.lockCursor = false;
+			}
+		}
+		
 	}
 
 	function OnGUI() {
 		GUI.Box (new Rect(Screen.width - 200,Screen.height - 50,170,25), "Action points remaining: " + remainingActions.ToString());
+
+		if(motiveDisplay)
+		{
+			GUI.Box(new Rect(Screen.width - 800,Screen.height - 500,170,25), "Motives");
+		}
+
+
 
 		if (endGame) {
 			print1 = false;

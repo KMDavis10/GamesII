@@ -22,6 +22,7 @@ var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
 var randallCam: Camera;
 var playerCam: Camera;  
+var controller: Animator; 
 
 // Use this for initialization
 function Start () {
@@ -39,6 +40,7 @@ function Start () {
 function Update () {
 	currentTime = Time.time;
 	currentTime1 = Time.time;
+	controller.SetBool("isFriendly", NPCLike);
 	if(executedTime != 0.0f)
 	{
 		if(currentTime - executedTime > timeToWait)
