@@ -9,6 +9,8 @@ private var currentTime = 0.0f;
 var executedTime = 0.0f;
 var timeToWait = 2.0f;
 var clickCount = 0;
+var fridgeCam: Camera;
+var playerCam: Camera; 
 
 function Start () {
 
@@ -21,6 +23,10 @@ function Update () {
 	{
 		if(currentTime - executedTime > timeToWait)
 		{
+			if (Screen.lockCursor == false) {
+					fridgeCam.enabled = false;
+					playerCam.enabled = true;
+				}
 			if (yesButtonClick == true && noButtonClick == false) {
 			/**	if(Inventory.remainingActions >= 2){
 					Inventory.remainingActions = Inventory.remainingActions - 2;
@@ -40,11 +46,26 @@ function Update () {
 	if (carrotTake) {
 		Destroy(gameObject);
 	}
+	if(Input.GetKey(KeyCode.Escape)) {
+			fridgeCam.enabled = false;
+			playerCam.enabled = true;
+			displayText = false;
+		}
 }
 
 	function OnMouseDown() {
-		displayText = true;
-		clickCount++;;
+	if (fridgeCam.enabled != true)
+		{
+			fridgeCam.enabled = true;
+			playerCam.enabled = false;
+			displayText = true;
+			clickCount++;
+		}
+		else
+		{
+			fridgeCam.enabled = false;
+			playerCam.enabled = true;
+		}
 	}
 	
 	function OnMouseUp() {

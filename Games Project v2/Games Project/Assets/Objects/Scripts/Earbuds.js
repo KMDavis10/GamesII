@@ -8,6 +8,8 @@ public class Earbuds extends MonoBehaviour {
 	var executedTime = 0.0f; 
 	var timeToWait = 2.0f;
 	var clickCount = 0;
+	var earCam: Camera;
+	var playerCam: Camera;  
 	// Use this for initialization
 	function Start () {
 		
@@ -22,6 +24,10 @@ public class Earbuds extends MonoBehaviour {
 		{
 			if(currentTime - executedTime > timeToWait)
 			{
+				if (Screen.lockCursor == false) {
+					earCam.enabled = false;
+					playerCam.enabled = true;
+				}
 				if (yesButtonClick == true && noButtonClick == false) {
 					//Destroy(gameObject);
 				}
@@ -34,11 +40,26 @@ public class Earbuds extends MonoBehaviour {
 		/**if (legTake) {
 			Destroy(gameObject);
 		}*/
+		if(Input.GetKey(KeyCode.Escape)) {
+			earCam.enabled = false;
+			playerCam.enabled = true;
+			displayText = false;
+		}
 	}
 	
 	function OnMouseDown() {
-		displayText = true;
-		clickCount++;
+	if (earCam.enabled != true)
+		{
+			earCam.enabled = true;
+			playerCam.enabled = false;
+			displayText = true;
+			clickCount++;
+		}
+	else
+	{
+		earCam.enabled = false;
+		playerCam.enabled = true;
+	}
 	}
 	
 	function OnMouseUp() {

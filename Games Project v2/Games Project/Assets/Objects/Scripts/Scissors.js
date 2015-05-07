@@ -1,6 +1,6 @@
 ﻿#pragma strict
 public class Scissors extends MonoBehaviour { 
-	public var scissorsWords = "Dang, yo! It's scissors!";
+	public var scissorsWords = "Dang, yo! It's Mr. Scissors!";
 	var displayText = false;
 	static var yesButtonClick = false;
 	var noButtonClick = false;
@@ -9,6 +9,8 @@ public class Scissors extends MonoBehaviour {
 	var executedTime = 0.0f;
 	var timeToWait = 2.0f;
 	var clickCount = 0;
+	var scissorCam: Camera;
+	var playerCam: Camera;
 
 	// Use this for initialization
 	function Start () {
@@ -28,6 +30,10 @@ public class Scissors extends MonoBehaviour {
 		{
 			if(currentTime - executedTime > timeToWait)
 			{
+				if (Screen.lockCursor == false) {
+					scissorCam.enabled = false;
+					playerCam.enabled = true;
+				}
 				if (yesButtonClick == true && noButtonClick == false) {
 					if(Controls.remainingActions >= 2){
 						for (var i = 0; i < Inventory.inventoryItems.length; i++) {
@@ -48,12 +54,27 @@ public class Scissors extends MonoBehaviour {
 		if (scissorsTake) {
 			Destroy(gameObject);
 		}
+		if(Input.GetKey(KeyCode.Escape)) {
+			scissorCam.enabled = false;
+			playerCam.enabled = true;
+			displayText = false;
+		}
 
 	}
 
 	function OnMouseDown() {
-		displayText = true;
-		clickCount++;;
+	if (scissorCam.enabled != true)
+		{
+			scissorCam.enabled = true;
+			playerCam.enabled = false;
+			displayText = true;
+			clickCount++;
+		}
+		else
+		{
+			scissorCam.enabled = false;
+			playerCam.enabled = true;
+		}
 	}
 
 	function OnMouseUp() {
