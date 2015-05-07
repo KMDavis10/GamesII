@@ -6,6 +6,7 @@ var maxStack = 20; //How many Items each stack can have before creating a new on
 var stack = 1; //This is how many stack counts this Item will take up.
 var isEquipment = true; //Can the Item be equipped? This includes weapons.
 var isAlsoWeapon = false; //Is the Item also a Weapon? This only works with isEquipment set to true.
+var playerCam: Camera;
 
 //This is the object we will instantiate in the Players hand.
 //We use this so we can have two versions of the weapon. One for picking up and one for using.
@@ -54,6 +55,7 @@ function OnMouseDown()
 	if (FPPickUpFound == false && Carrots.yesButtonClick || FPPickUpFound == false && Knife.yesButtonClick || FPPickUpFound == false && LegOfLamb.yesButtonClick || FPPickUpFound == false && Earbuds.yesButtonClick || FPPickUpFound == false && Scissors.yesButtonClick)
 	{
 			PickUpItem();
+			playerCam.enabled = true;
 	}
 }
 

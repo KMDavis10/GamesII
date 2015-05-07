@@ -30,10 +30,9 @@ public class Knife extends MonoBehaviour {
 		{
 			if(currentTime - executedTime > timeToWait)
 			{
-				for (var i = 0; i < Inventory.count; i++) {
-					if (Inventory.inventoryItems[i] == "Knife") {
-						knifeTake = true;
-					}
+				if (Screen.lockCursor == false) {
+					knifeCam.enabled = false;
+					playerCam.enabled = true;
 				}
 			}
 			executedTime = 0.0f;
@@ -41,12 +40,20 @@ public class Knife extends MonoBehaviour {
 			noButtonClick = false;
 
 		}
-
+		
+		if(Input.GetKey(KeyCode.Escape)) {
+			knifeCam.enabled = false;
+			playerCam.enabled = true;
+			displayText = false;
+		}
+		
 	}
 
 	function OnMouseDown() {
+		knifeCam.enabled = true;
+		playerCam.enabled = false;
 		displayText = true;
-		clickCount++;;
+		clickCount++;
 	}
 
 	function OnMouseUp() {
