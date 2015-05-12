@@ -36,7 +36,7 @@ public class Controls extends MonoBehaviour
 	public var randallCam: Camera;
 	public var veronicaCam: Camera;
 	var motiveDisplay = false;
-	private var windowRect =Rect (200,200,108,130);
+	private var windowRect = Rect (200,200,108,130);
 
 	function Start () {
 		
@@ -106,7 +106,7 @@ public class Controls extends MonoBehaviour
 			print1 = false;
 			/** If the user picks Henry as the killer*/
 			if (displayNPCs) { 
-				if (GUI.Button (new Rect (100, 280, 100, 20), "Henry") && displayNPCs) {
+				if (GUI.Button (new Rect (100, 280, 100, 20), "Henry")) {
 					displayMotives = true;
 					correctNPC = true;
 					displayNPCs = false;
