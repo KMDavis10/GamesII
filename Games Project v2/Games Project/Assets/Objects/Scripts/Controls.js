@@ -16,6 +16,7 @@ public class Controls extends MonoBehaviour
 	public static var maxActions: int = 0;
 	public static var remainingActions: int = 0;
 	public static var levelCount: int = 0;
+	public static var levelDisplay: String = "";
 	var print1: boolean = false;
 	static var endGame: boolean = false;
 	var throwAway: boolean = false;
@@ -94,6 +95,31 @@ public class Controls extends MonoBehaviour
 
 	function OnGUI() {
 		GUI.Box (new Rect(Screen.width - 200,Screen.height - 50,170,25), "Action points remaining: " + remainingActions.ToString());
+		
+		//Debug.Log("Level Count: " + levelCount);
+		
+		if(levelCount % 2 != 0)
+		{
+			levelDisplay = "On-job: Day ";
+		}
+		else
+		{
+			levelDisplay = "On break: Day ";
+		}
+		
+		if(levelCount==1 || levelCount==2)
+		{
+			levelDisplay += "1";
+		}
+		else if(levelCount==3 || levelCount==4)
+		{
+			levelDisplay += "2";
+		}
+		else if(levelCount==5 || levelCount==6)
+		{
+			levelDisplay += "3";
+		}
+		GUI.Box (new Rect(Screen.width - 400,Screen.height - 50,170,25), levelDisplay);
 
 		if(motiveDisplay)
 		{
