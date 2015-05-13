@@ -49,7 +49,9 @@ function AddItem(Item:Transform)
 	{
 		playersInvDisplay.UpdateInventoryList();
 	}
-	Controls.remainingActions = Controls.remainingActions-2;
+	if (inventoryItems[count] == "Knife" && Knife.knifeTake == true) {
+		Controls.remainingActions = Controls.remainingActions-2;
+	}
 	
 }
 

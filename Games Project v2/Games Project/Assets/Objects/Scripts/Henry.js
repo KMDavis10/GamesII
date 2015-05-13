@@ -108,7 +108,7 @@ function Update () {
 }
 
 function OnMouseDown() {
-	Camera.main.enabled = false;
+	playerCam.enabled = false;
 	henryCam.enabled = true;
 	//Debug.Log(henryCam.gameObject.name);
 	displayText = true;

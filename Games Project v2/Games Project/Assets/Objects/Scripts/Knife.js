@@ -4,11 +4,13 @@ public class Knife extends MonoBehaviour {
 	var displayText = false;
 	static var yesButtonClick = false;
 	var noButtonClick = false;
-	var knifeTake = false; 
+	static var knifeTake = false; 
 	private var currentTime = 0.0f;
 	var executedTime = 0.0f;
 	var timeToWait = 2.0f;
 	var clickCount = 0;
+	var knifeCam: Camera;
+	var playerCam: Camera;  
 
 	// Use this for initialization
 	function Start () {
@@ -28,32 +30,30 @@ public class Knife extends MonoBehaviour {
 		{
 			if(currentTime - executedTime > timeToWait)
 			{
-				if (yesButtonClick == true && noButtonClick == false) {
-					if(Controls.remainingActions >= 2){
-						for (var i = 0; i < Inventory.inventoryItems.length; i++) {
-							if (Inventory.inventoryItems[i] == "Knife") {
-								Debug.Log("eyyyy");
-								Controls.remainingActions = Controls.remainingActions - 2;
-								knifeTake = true;
-							}
-						}
-					}
-				}  
+				if (Screen.lockCursor == false) {
+					knifeCam.enabled = false;
+					playerCam.enabled = true;
+				}
 			}
 			executedTime = 0.0f;
 			//yesButtonClick = false;
 			noButtonClick = false;
 
 		}
-		if (knifeTake) {
-			Destroy(gameObject);
+		
+		if(Input.GetKey(KeyCode.Escape)) {
+			knifeCam.enabled = false;
+			playerCam.enabled = true;
+			displayText = false;
 		}
-
+		
 	}
 
 	function OnMouseDown() {
+		knifeCam.enabled = true;
+		playerCam.enabled = false;
 		displayText = true;
-		clickCount++;;
+		clickCount++;
 	}
 
 	function OnMouseUp() {
