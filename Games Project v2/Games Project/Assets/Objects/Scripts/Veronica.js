@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 private var npcWords: String[];
 var presentEvidence : boolean[];
@@ -22,7 +22,11 @@ var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
 var veronicaCam: Camera;
 var playerCam: Camera;  
+<<<<<<< .merge_file_pAMRE9
 var controller: Animator; 
+=======
+var controller: Animator;
+>>>>>>> .merge_file_46IEgI
 
 // Use this for initialization
 function Start () {
@@ -40,7 +44,11 @@ function Start () {
 function Update () {
 	currentTime = Time.time;
 	currentTime1 = Time.time;
+<<<<<<< .merge_file_pAMRE9
 	controller.SetBool("isFriendly", NPCLike);
+=======
+	controller.SetBool("isFriendly",NPCLike);
+>>>>>>> .merge_file_46IEgI
 	if(executedTime != 0.0f)
 	{
 		if(currentTime - executedTime > timeToWait)
@@ -190,4 +198,6 @@ function OnGUI() {
 			}
 		}
 	}
-} 
+
+    
+}

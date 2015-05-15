@@ -50,25 +50,17 @@ public class Knife extends MonoBehaviour {
 	}
 
 	function OnMouseDown() {
-		if (knifeCam.enabled != true)
-		{
-			knifeCam.enabled = true;
-			playerCam.enabled = false;
-			displayText = true;
-			clickCount++;
-		}
-		else
-		{
-			knifeCam.enabled = false;
-			playerCam.enabled = true;
-		}
+		knifeCam.enabled = true;
+		playerCam.enabled = false;
+		displayText = true;
+		clickCount++;
 	}
 
-	/*function OnMouseUp() {
+	function OnMouseUp() {
 		if (clickCount % 2 == 0) {
 			displayText = false;
 		}
-	}*/
+	}
 
 	function OnGUI() {
 		if (displayText) {

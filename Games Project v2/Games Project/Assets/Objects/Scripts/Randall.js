@@ -21,8 +21,13 @@ var talkCounter: int = 0;
 var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
 var randallCam: Camera;
+<<<<<<< .merge_file_VM3KxE
 var playerCam: Camera;  
 var controller: Animator; 
+=======
+var playerCam: Camera;
+var controller: Animator;
+>>>>>>> .merge_file_k0jI4y
 
 // Use this for initialization
 function Start () {
@@ -40,6 +45,10 @@ function Start () {
 function Update () {
 	currentTime = Time.time;
 	currentTime1 = Time.time;
+<<<<<<< .merge_file_VM3KxE
+=======
+
+>>>>>>> .merge_file_k0jI4y
 	controller.SetBool("isFriendly", NPCLike);
 	if(executedTime != 0.0f)
 	{

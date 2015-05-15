@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< .merge_file_UwowQR
 guid: 06251a2c33d75a04795a374b232839d1
+=======
+guid: 02fa1bb2418805846b5e257abff81414
+>>>>>>> .merge_file_il0F3j
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -217,7 +221,11 @@ ModelImporter:
     400208: UpperLidL
     400210: UpperLidR
     400212: //RootNode
+<<<<<<< .merge_file_UwowQR
     7400000: Neutral
+=======
+    7400000: Take 001
+>>>>>>> .merge_file_il0F3j
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -234,6 +242,7 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+<<<<<<< .merge_file_UwowQR
     clipAnimations:
     - serializedVersion: 16
       name: Neutral
@@ -475,6 +484,9 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+=======
+    clipAnimations: []
+>>>>>>> .merge_file_il0F3j
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -509,7 +521,11 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
+<<<<<<< .merge_file_UwowQR
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 2461e4ed628f0f045b9b0f61c061f460,
+=======
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9fb659d45269e254fa52a1d5f752a253,
+>>>>>>> .merge_file_il0F3j
     type: 3}
   animationType: 2
   additionalBone: 0

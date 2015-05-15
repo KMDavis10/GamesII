@@ -22,7 +22,11 @@ var likedWordCount: int = 0;
 var dislikedWordCount: int = 0;
 var henryCam: Camera;
 var playerCam: Camera;  
+<<<<<<< .merge_file_94iHwX
 var controller: Animator; 
+=======
+var controller: Animator;
+>>>>>>> .merge_file_fcYA1g
 
 // Use this for initialization
 function Start () {
@@ -40,6 +44,10 @@ function Start () {
 function Update () {
 	currentTime = Time.time;
 	currentTime1 = Time.time;
+<<<<<<< .merge_file_94iHwX
+=======
+
+>>>>>>> .merge_file_fcYA1g
 	controller.SetBool("isFriendly", NPCLike);
 	if(executedTime != 0.0f)
 	{

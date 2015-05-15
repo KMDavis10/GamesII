@@ -9,8 +9,6 @@ public class LegOfLamb extends MonoBehaviour {
 	var executedTime = 0.0f; 
 	var timeToWait = 2.0f;
 	var clickCount = 0;
-	var legOfCam: Camera;
-	var playerCam: Camera; 
 	// Use this for initialization
 	function Start () {
 		
@@ -25,10 +23,6 @@ public class LegOfLamb extends MonoBehaviour {
 		{
 			if(currentTime - executedTime > timeToWait)
 			{
-				if (Screen.lockCursor == false) {
-					legOfCam.enabled = false;
-					playerCam.enabled = true;
-				}
 				if (yesButtonClick == true && noButtonClick == false) {
 					//Destroy(gameObject);
 				}
@@ -41,26 +35,11 @@ public class LegOfLamb extends MonoBehaviour {
 		if (legTake) {
 			Destroy(gameObject);
 		}
-		if(Input.GetKey(KeyCode.Escape)) {
-			legOfCam.enabled = false;
-			playerCam.enabled = true;
-			displayText = false;
-		}
 	}
 	
 	function OnMouseDown() {
-	if (legOfCam.enabled != true)
-		{
-			legOfCam.enabled = true;
-			playerCam.enabled = false;
-			displayText = true;
-			clickCount++;
-		}
-	else
-	{
-		legOfCam.enabled = false;
-		playerCam.enabled = true;
-	}
+		displayText = true;
+		clickCount++;
 	}
 	
 	function OnMouseUp() {
