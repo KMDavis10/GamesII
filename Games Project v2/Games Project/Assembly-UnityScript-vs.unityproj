@@ -110,6 +110,7 @@
      <None Include="Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\CGIncludes\Tessellation.cginc" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\CGIncludes\Lighting.cginc" />
+     <None Include="Assets\StaticAssets\materials\shaders\GUI-FadeOut.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResources\Internal-CombineDepthNormals.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
@@ -118,6 +119,7 @@
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResources\Internal-GUITexture.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Decal.shader" />
+     <None Include="Assets\StaticAssets\materials\shaders\GUI-FadeOut2.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\uGUI\GUI-DefaultFont.shader" />
@@ -136,6 +138,7 @@
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\TerrainShaders\Details\VertexLit.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\CGIncludes\TerrainEngine.cginc" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\uGUI\StencilMask.shader" />
+     <None Include="Assets\StaticAssets\materials\shaders\GUI-Unlit-Detail.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Nature\Terrain\TerrBumpFirstPass.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
      <None Include="Assets\StaticAssets\materials\shaders\builtin\DefaultResourcesExtra\Normal-DiffuseFast.shader" />

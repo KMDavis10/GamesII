@@ -190,10 +190,6 @@ function OnGUI() {
 			}
 		}
 	}
-<<<<<<< HEAD
 
     
 }
-=======
-} 
->>>>>>> 72692e38dd8e67a12a5ab59bafc016abd09c4525

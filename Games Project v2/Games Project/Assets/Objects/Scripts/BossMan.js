@@ -10,12 +10,15 @@ function Start () {
         meshrend.enabled = false;
     }
     
-    Invoke("EnableMesh", 1.5);
+    Invoke("EnableMesh", 2.0);
 }
 
-function Update () {
-    var meep : Vector3 = new Vector3(0.375, 0.375, 0.375);
-    transform.localScale = Vector3.Lerp(transform.localScale, meep, Time.deltaTime*0.5);
+    function Update () {
+        if (Time.timeSinceLevelLoad > 1.75)
+        {
+            var meep : Vector3 = new Vector3(0.375, 0.375, 0.375);
+            transform.localScale = Vector3.Lerp(transform.localScale, meep, Time.deltaTime*0.5);
+        }
 }
 
 function EnableMesh()

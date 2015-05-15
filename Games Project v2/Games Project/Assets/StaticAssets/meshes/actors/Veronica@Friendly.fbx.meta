@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7862e909bd7117a40b0133d6f86c1e07
+guid: 0db8140265f196b4082839a40d9cda8b
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -217,7 +217,7 @@ ModelImporter:
     400208: UpperLidL
     400210: UpperLidR
     400212: //RootNode
-    7400000: Friendly
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -234,247 +234,7 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Friendly
-      takeName: Take 001
-      firstFrame: 1
-      lastFrame: 90
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: group1
-        weight: 1
-      - path: group1/H_DDS_MidRes
-        weight: 1
-      - path: group1/l_wig
-        weight: 1
-      - path: group1/m_L_eye
-        weight: 1
-      - path: group1/m_L_gland
-        weight: 1
-      - path: group1/m_L_trans
-        weight: 1
-      - path: group1/m_R_eye
-        weight: 1
-      - path: group1/m_R_gland
-        weight: 1
-      - path: group1/m_R_trans
-        weight: 1
-      - path: group1/m_TeethDown
-        weight: 1
-      - path: group1/m_TeethUp
-        weight: 1
-      - path: master
-        weight: 1
-      - path: master/Reference
-        weight: 1
-      - path: master/Reference/Hips
-        weight: 1
-      - path: master/Reference/Hips/LeftUpLeg
-        weight: 1
-      - path: master/Reference/Hips/LeftUpLeg/LeftLeg
-        weight: 1
-      - path: master/Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot
-        weight: 1
-      - path: master/Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
-        weight: 1
-      - path: master/Reference/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeEnd
-        weight: 1
-      - path: master/Reference/Hips/RightUpLeg
-        weight: 1
-      - path: master/Reference/Hips/RightUpLeg/RightLeg
-        weight: 1
-      - path: master/Reference/Hips/RightUpLeg/RightLeg/RightFoot
-        weight: 1
-      - path: master/Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
-        weight: 1
-      - path: master/Reference/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeEnd
-        weight: 1
-      - path: master/Reference/Hips/Spine
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex0
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex0/LeftHandIndex1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex0/LeftHandIndex1/LeftHandIndex2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex0/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandIndex0/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3/LeftHandIndex4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3/LeftHandMiddle4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky0
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky0/LeftHandPinky1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky0/LeftHandPinky1/LeftHandPinky2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky0/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandPinky0/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3/LeftHandPinky4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2/LeftHandRing3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandRing1/LeftHandRing2/LeftHandRing3/LeftHandRing4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandThumb1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandThumb1/LeftHandThumb2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftFingerBase/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3/LeftHandThumb4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/BrowInnerL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/BrowInnerR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/BrowOuterL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/BrowOuterR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/CheekL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/CheekR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/HeadEnd
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Jaw
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Jaw/LipLowerL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Jaw/LipLowerR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Jaw/TongueR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Jaw/TongueR/TongueF
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LeftEye
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LipCornerL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LipCornerR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LipUpperL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LipUpperR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LowerLidL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/LowerLidR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/Nostrils
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/RightEye
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/UpperLidL
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/Neck/Head/UpperLidR
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex0
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex0/RightHandIndex1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex0/RightHandIndex1/RightHandIndex2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex0/RightHandIndex1/RightHandIndex2/RightHandIndex3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandIndex0/RightHandIndex1/RightHandIndex2/RightHandIndex3/RightHandIndex4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandMiddle1/RightHandMiddle2/RightHandMiddle3/RightHandMiddle4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky0
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky0/RightHandPinky1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky0/RightHandPinky1/RightHandPinky2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky0/RightHandPinky1/RightHandPinky2/RightHandPinky3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandPinky0/RightHandPinky1/RightHandPinky2/RightHandPinky3/RightHandPinky4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2/RightHandRing3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandRing1/RightHandRing2/RightHandRing3/RightHandRing4
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandThumb1
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandThumb1/RightHandThumb2
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandThumb1/RightHandThumb2/RightHandThumb3
-        weight: 1
-      - path: master/Reference/Hips/Spine/Spine1/Spine2/RightShoulder/RightArm/RightForeArm/RightHand/RightFingerBase/RightHandThumb1/RightHandThumb2/RightHandThumb3/RightHandThumb4
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -509,7 +269,7 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 2461e4ed628f0f045b9b0f61c061f460,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9fb659d45269e254fa52a1d5f752a253,
     type: 3}
   animationType: 2
   additionalBone: 0
